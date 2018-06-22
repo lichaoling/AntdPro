@@ -1,0 +1,31 @@
+.drawtool {
+  position: absolute;
+  z-index: 999;
+  top: 10px;
+  right: 10px;
+  background: white;
+  font-size: 14px;
+  > ul {
+    padding: 10px;
+    margin: 0;
+    border-radius: 3px;
+  }
+  > ul > li {
+    display: inline;
+    padding: 5px 10px;
+    min-width: 60px;
+    cursor: pointer;
+    &:not(:first-child) {
+      border-left: 1px solid #f1f1f1;
+    }
+  }
+
+  .toolpanel {
+    position: absolute;
+    top: calc(~'100% + 5px');
+    left: 0;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}

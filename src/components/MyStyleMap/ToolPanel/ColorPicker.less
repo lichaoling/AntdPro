@@ -1,0 +1,28 @@
+.colorpicker {
+  > div {
+    height: 30px;
+    width: 30px;
+    margin: 3px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid rgb(222, 222, 222);
+    cursor: pointer;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+  }
+  > div:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    border: 1px solid rgb(202, 202, 202);
+  }
+  > div.active:after {
+    content: '√';
+    color: rgb(222, 222, 222);
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: block;
+    line-height: 30px;
+  }
+}
